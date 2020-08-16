@@ -1,0 +1,1 @@
+Daisy is a border collie dog, living with the [carpenter](/wiki/Ben%20Carpenter) family. She **barks** a little too much 

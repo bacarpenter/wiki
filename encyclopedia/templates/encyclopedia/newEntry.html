@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Entry
+{% endblock %}
+
+{% block body %}
+    <h1>New entry</h1>
+
+    <p>Thank you for adding to our wiki. Below you can write markdown content, and choose a distinct title.</p>
+    <form method="POST">
+        <input type="text" name="t" placeholder="Title" id="entryTitle">
+        <!-- Texta area help from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea -->
+        <textarea name="c" id="entryContent" class="form-control" rows=3 placeholder="Write your page here!"></textarea>
+        <!-- CSRF token | Syntax from Django's 403 and lecutre3 source code.-->
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" id="submitNew">
+    </form>
+
+{% endblock %}

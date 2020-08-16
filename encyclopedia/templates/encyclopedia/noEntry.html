@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    404
+{% endblock %}
+
+{% block body %}
+    <h1>Oh No!</h1>
+
+    <p>We're sorry, but the page "{{ title }}" can not be found. Please check you're spelling, or create the page <a href="/create">here</a>.</p>
+    <!-- Note, href logic was coppied from layout.html -->
+
+{% endblock %}

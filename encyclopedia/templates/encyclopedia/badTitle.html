@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %} 
+{% block title %} 404 
+{% endblock %} 
+
+{% block body %}
+<h1>Oh No!</h1>
+
+<p>
+  We're sorry, but the page "{{ title }}" already exsits. Check it out
+  <a href="/wiki/{{ title }}">here</a>
+</p>
+<!-- Note, href logic was coppied from layout.html -->
+
+{% endblock %}

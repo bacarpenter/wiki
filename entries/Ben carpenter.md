@@ -1,0 +1,1 @@
+Ben Carpenter is an American student developer, currently enrolled in CS50w. He is also **really** cool! He can be found online here: [LinkedIn](https://www.linkedin.com/in/ben-carpenter-6155601a6/)

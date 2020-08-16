@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %} 
+{% block title %} 
+{{ title }} 
+{% endblock %} 
+{% block body %}
+<h1>{{ title }}</h1>
+<hr />
+
+<div>{{ entry|safe }}</div>
+<!-- Help with safe from https://docs.djangoproject.com/en/3.0/ref/templates/builtins/#safe-->
+
+<a href="/edit/{{ title }}" class="btn btn-primary">Edit this page</a>
+
+{% endblock %}

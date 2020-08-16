@@ -1,0 +1,29 @@
+{% extends "encyclopedia/layout.html" %} 
+{% block title %} 
+  Encyclopedia 
+{% endblock %} 
+
+{% block body %}
+<h1>All Pages</h1>
+
+<ul>
+  {% for entry in entries %}
+  <li><a href="wiki/{{ entry }}">{{ entry }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
+<!--
+    Written by Ben Carpenter, for CS50w's Project 1 (2020). I used internet sources, 
+    and code is sighted as nessary. I wrote using extentions, however, again code is cited as need be.
+
+    A formatting extention, prettier, has been used on some to many pages.
+
+    I recived help setting up a Django project on stack overflow, via this 
+    question: https://stackoverflow.com/questions/63403489/how-do-i-start-a-django-project, 
+    and I thank the answerer.
+
+    Text area formatting came from Bootstrap via this page https://getbootstrap.com/docs/4.5/components/forms/
+
+    Not all entries are nessasarly my own. I showed this to family and they played around with it.
+-->

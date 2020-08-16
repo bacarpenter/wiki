@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block body %}
+    <h1>Edit entry</h1>
+
+    <p>Thank you for updating our wiki. Below you can edit markdown content</p>
+    <form method="POST">
+        <!-- Texta area help from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea -->
+        <textarea name="c" id="entryContent" class="form-control" rows=3>{{ orgContent }}</textarea>
+        <!-- CSRF token | Syntax from Django's 403 and lecutre3 source code.-->
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" id="submitNew">
+    </form>
+
+{% endblock %}
