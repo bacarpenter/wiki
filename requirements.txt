@@ -2,3 +2,4 @@ django
 django-heroku
 markdown2
 Gunicorn
+whitenoise
